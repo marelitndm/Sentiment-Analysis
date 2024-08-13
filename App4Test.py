@@ -9,7 +9,7 @@ from datetime import datetime
 st.image('tndm_logo.png', width=100)
 
 # App title
-st.title("Project Sentiment Survey")
+st.title("Project Sentiment Analysis")
 
 # Get client ID from URL parameter
 client_id = st.query_params.get("client_id", "")
@@ -29,14 +29,14 @@ def extract_sheet_id(url):
     return match.group(1) if match else None
 
 # Function to get organization sheet
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def get_org_sheet(client_id):
     try:
         creds = authenticate_and_connect()
         client = gspread.authorize(creds)
         
         # Open the main spreadsheet
-        sheet = client.open_by_key("1yyv2GFcJpxx9ghg9uoYN8ENVp17C2VX7WNVtDC-RbAw").worksheet("OrgDatabase")
+        sheet = client.open_by_key("19BPIRr7V5WTz1pxfmskX9TfmxkcA8M934cu-VqvB5-8").worksheet("OrgDatabase")
         
         # Find the row with the matching client ID
         client_cell = sheet.find(client_id, in_column=2)  # Search in column B
@@ -51,7 +51,7 @@ def get_org_sheet(client_id):
         return None
 
 
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def get_unique_teams(sheet_id):
     try:
         creds = authenticate_and_connect()
@@ -72,7 +72,7 @@ def get_unique_teams(sheet_id):
         return []
 
 
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def get_unique_phases(sheet_id):
     try:
         creds = authenticate_and_connect()
@@ -105,7 +105,7 @@ def get_unique_phases(sheet_id):
 
 
 
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def get_questions(sheet_id, team, phase):
     try:
         creds = authenticate_and_connect()
