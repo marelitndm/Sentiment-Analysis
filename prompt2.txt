@@ -1,0 +1,85 @@
+Based on the project sentiment survey data, give me the data for a summary report. The questions that we asked are the following for the different teams:
+
+Team: Projects
+Q1: Are meeting structures (type, frequency) effective in supporting programme goals?
+Q2: What plans are in place for onboarding new team members and ramping up the programme?
+Q3: How effective is the reporting structure in keeping stakeholders informed and aligned?
+Q4: How are issues identified, tracked, and resolved within the programme?
+
+Team: Finance
+Q1:How is cost tracking and monitoring being conducted to ensure financial control?
+Q2:How is financial reporting conducted to ensure transparency and accountability?
+Q3:How are budget variances analyzed and managed to keep the programme on track?	
+Q4: What financial approval processes are in place for managing contractual deliverables and reserves?
+
+Team: Engineering
+Q1: Have you slotted in the design and build phases into your weekly sprints?
+Q2: Have you buffered in enough time to ensure that we will be able to make the deadlines?
+Q3: Are there any risks with other project deadlines that may impact this project?
+Q4: Have you been involved in the current cost estimates that have been shared with the stakeholders?
+
+
+Team: Support
+Q1: Do you know when training needs to take place?
+Q2: Has a handover session been planned with your team post design and build?
+Q3: Do you know when introductions are scheduled with the support team and the client teams?
+Q4: 
+
+
+Team: Test
+Q1: Do you know when testing kicks off?	Have you kicked off your testing plan?
+Q2: Has a handover session been planned with your team post design and build?
+Q3: Are there any areas that concern you that may be a risk?
+Q4: How excited are you about the project?
+
+
+The main aim of the report will be to identify macro trends and find recommendations based on the feedback given by the different teams. For each team a short summary should be given to identifying macro trends based on the data and recommendations to ensure that if anything is flagged as a concern, it should be addressed to make sure that the project keeps on track and early signs of failure is picked up. 
+
+
+This is an example of the output in json that I want to get:
+[
+  {
+    "Date": "2024-08-04",
+    "Company Name": "TFG",
+    "Overview": "This report summarizes the feedback from the project sentiment survey, analyzing responses from different phases and teams. The main goal is to identify macro trends and provide recommendations to address concerns, ensuring the project remains on track and potential issues are addressed early.",
+    "Sentiment Summary Planning Team 1 Header": "Projects Team:",
+    "Sentiment Summary Team 1 Text": "The current meeting structures are generally effective but may benefit from adjusted formats. Onboarding is well-structured, and reporting is robust. Issue tracking is in place with weekly reviews.",
+    "Sentiment Recommendation Team 1 Text": "Consider refining meeting types to focus more on specific tasks and ensuring the reporting system remains concise and transparent.",
+    "Sentiment Summary Planning Team 2 Header": "Finance Team:",
+    "Sentiment Summary Team 2 Text": "Cost tracking and financial reporting are conducted effectively, with real-time variance analysis and strict approval processes in place.",
+    "Sentiment Recommendation Team 2 Text": "Continue monitoring financials closely and maintain stringent review processes to address any potential variances promptly.",
+    "Sentiment Summary Planning Team 3 Header": "Engineering Team:",
+    "Sentiment Summary Team 3 Text": "Design and build phases are integrated into weekly sprints with adequate buffers. Potential risks related to deadlines are identified and managed.",
+    "Sentiment Recommendation Team 3 Text 1": "Maintain current practices for risk management and ensure that timelines are adjusted as needed to accommodate any new requirements.",
+    "Sentiment Summary Planning Team 4 Header": "Support Team:",
+    "Sentiment Summary Team 4 Text": "Training and handover sessions are planned, with introductions scheduled. There is good alignment with project milestones.",
+    "Sentiment Recommendation Team 4 Text": "Ensure all training and handover plans are executed as scheduled and monitor readiness closely.",
+    "Sentiment Summary Planning Team 5 Header": "Test Team:",
+    "Sentiment Summary Team 5 Text": "Testing preparations are underway with a plan for bug tracking and retesting. Concerns about integration points and complexity are noted.",
+    "Sentiment Recommendation Team 5 Text": "Focus on addressing integration risks and refine the testing plan to cover all potential complexities."
+    "Sentiment Summary Planning Macro Trends Header": "Macro Trends:",
+    "Sentiment Summary Planning Macro Trends Header 1": "Effectiveness:",
+    "Sentiment Summary Planning Macro Trends Text 1": "Many responses highlighted the effectiveness of current practices, though improvements are suggested for specific areas such as meeting types and reporting clarity.:",
+    "Sentiment Summary Planning Macro Trends Header 2": "Risk Management:",
+    "Sentiment Summary Planning Macro Trends Text 2": "Risks are frequently mentioned, emphasizing the need for ongoing risk management and mitigation strategies.",
+    "Sentiment Summary Planning Macro Trends Header 3": "Documentation and Updates:",
+    "Sentiment Summary Planning Macro Trends Text 3": "Regular updates and thorough documentation are key themes, underscoring their importance in maintaining alignment and transparency.",
+    "Sentiment Summary Planning Macro Trends Header 4": "Budget and Financial Control:",
+    "Sentiment Summary Planning Macro Trends Text 4": "Monitoring and control of budget and costs are consistently noted as crucial for project success.",
+    "Sentiment Summary Planning Macro Trends Header 5": "Quality and Testing:",
+    "Sentiment Summary Planning Macro Trends Text 5": "There is a strong focus on maintaining quality through rigorous testing and bug tracking processes.",
+    "Sentiment Summary Planning Recommendations Based on Trends Header": "Recommendations Based on Trends:",
+    "Sentiment Summary Planning Recommendations Based on Trends Header 1": "Improve Communication:",
+    "Sentiment Summary Planning Recommendations Based on Trends Text 1": "Refine meeting structures and reporting formats for better focus and clarity.",
+    "Sentiment Summary Planning Recommendations Based on Trends Header 2": "Strengthen Risk Management:",
+    "Sentiment Summary Planning Recommendations Based on Trends Text 2": "Continuously monitor and address risks with updated plans and regular reviews.",
+    "Sentiment Summary Planning Recommendations Based on Trends Header 3": "Ensure Comprehensive Documentation:",
+    "Sentiment Summary Planning Recommendations Based on Trends Text 3": "Keep all documentation up to date and ensure it is shared and reviewed regularly.",
+    "Sentiment Summary Planning Recommendations Based on Trends Header 4": "Maintain Financial Oversight:",
+    "Sentiment Summary Planning Recommendations Based on Trends Text 4": "Continue rigorous tracking and approval processes for budget management.",
+    "Sentiment Summary Planning Recommendations Based on Trends Header 5": "Enhance Quality Assurance:",
+    "Sentiment Summary Planning Recommendations Based on Trends Text 5": "Focus on thorough testing and quality control to address potential issues early.",
+
+
+  }
+]
