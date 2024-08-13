@@ -41,7 +41,7 @@ def openai_api(page_text, system_prompt):
         return None
 
 # Streamlit app
-st.title("Project Sentiment Survey Data Analysis App")
+st.title("Sentiment Analysis Data Upload")
 
 # Company name input
 company_name = st.text_input("Enter company name:")
@@ -78,7 +78,7 @@ if st.button("Submit"):
                 # Connect to Google Sheets
                 credentials = authenticate_and_connect()
                 gc = gspread.authorize(credentials)
-                sheet_id = "1vmXKxxE4ROfrKK2X7LWo55YTf9KWCchYekynVn0yo0Y"
+                sheet_id = "1gXtAS8N82xG-_MyivumV6PcsUZN_HKZ3jvm3ut8gZ04"
                 sh = gc.open_by_key(sheet_id)
                 worksheet = sh.sheet1
                 
@@ -138,6 +138,6 @@ if st.button("Submit"):
             st.error("Failed to get a response from the OpenAI API.")
 
 # Display the JSON response (optional)
-if 'parsed_json' in locals():
-    st.subheader("JSON Response:")
-    st.json(parsed_json)
+#if 'parsed_json' in locals():
+ #   st.subheader("JSON Response:")
+  #  st.json(parsed_json)
