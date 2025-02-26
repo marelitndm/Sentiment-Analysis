@@ -73,13 +73,13 @@ def get_unique_teams(sheet_id):
 
 
 @st.cache_data(show_spinner=False)
-def get_unique_phases(sheet_id):
+def get_unique_phases(1Pi1n9m8ZDz-esdtCPMgo0RRy2eVMol592tWOcK-i70M):
     try:
         creds = authenticate_and_connect()
         client = gspread.authorize(creds)
         
         # Open the client-specific spreadsheet and select the TeamQuestions sheet
-        sheet = client.open_by_key(sheet_id).worksheet("TeamQuestions")
+        sheet = client.open_by_key(1Pi1n9m8ZDz-esdtCPMgo0RRy2eVMol592tWOcK-i70M).worksheet("TeamQuestions")
         
         # Get all values from column B (Phase)
         all_phases = sheet.col_values(2)[1:]  # Skip header row
