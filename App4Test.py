@@ -73,7 +73,7 @@ def get_unique_teams(sheet_id):
 
 
 @st.cache_data(show_spinner=False)
-def get_unique_phases("1Pi1n9m8ZDz-esdtCPMgo0RRy2eVMol592tWOcK-i70M"):
+def get_unique_phases(sheet_id):
     try:
         creds = authenticate_and_connect()
         client = gspread.authorize(creds)
