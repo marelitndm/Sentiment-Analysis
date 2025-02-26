@@ -232,9 +232,9 @@ if org_sheet_id:
             if st.session_state.reset_form:
                 st.session_state.reset_form = False
         else:
-            st.warning("No questions found for the selected Department and Terraform Stream. Please try a different combination.")
+            st.warning("No questions found for the selected department and terraform stream. Please try a different combination.")
     else:
-        st.info("Please select both a Department and a Terraform Stream to view the questions.")
+        st.info("Please select both a department and a terraform stream to view the questions.")
 
 else:
     st.error("Invalid client ID or error accessing the database. Please check the URL and try again.")
