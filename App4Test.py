@@ -58,7 +58,7 @@ def get_unique_teams(sheet_id):
         client = gspread.authorize(creds)
         
         # Open the client-specific spreadsheet and select the TeamQuestions sheet
-        sheet = client.open_by_key(sheet_id).worksheet("TeamQuestions")
+        sheet = client.open_by_key("1Pi1n9m8ZDz-esdtCPMgo0RRy2eVMol592tWOcK-i70M").worksheet("TeamQuestions")
         
         # Get all values from column A (Team)
         all_teams = sheet.col_values(1)[1:]  # Skip header row
