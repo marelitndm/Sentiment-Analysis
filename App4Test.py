@@ -164,7 +164,7 @@ if org_sheet_id:
     # Team selection
     teams = get_unique_teams(org_sheet_id)
     if teams:
-        selected_team = st.selectbox("1. What team do you work in?", [""] + teams, index=0 if st.session_state.reset_form else None, key="q0")
+        selected_team = st.selectbox("1. What department do you work in?", [""] + teams, index=0 if st.session_state.reset_form else None, key="q0")
     else:
         st.error("Unable to fetch team list. Please try again later.")
         st.stop()
@@ -172,7 +172,7 @@ if org_sheet_id:
     # Phase selection
     phases = get_unique_phases(org_sheet_id)
     if phases:
-        selected_phase = st.selectbox("2. What phase of the project are you in now?", [""] + phases, index=0 if st.session_state.reset_form else None, key="q1")
+        selected_phase = st.selectbox("2. What terraform stream are you providing feedback on?", [""] + phases, index=0 if st.session_state.reset_form else None, key="q1")
     else:
         st.error("Unable to fetch phase list. Please try again later.")
         st.stop()
