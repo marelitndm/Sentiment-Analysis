@@ -9,7 +9,7 @@ from datetime import datetime
 st.image('tndm_logo.png', width=100)
 
 # App title
-st.title("Project Sentiment Analysis")
+st.title("Terraform Feedback")
 
 # Get client ID from URL parameter
 client_id = st.query_params.get("client_id", "")
@@ -36,7 +36,7 @@ def get_org_sheet(client_id):
         client = gspread.authorize(creds)
         
         # Open the main spreadsheet
-        sheet = client.open_by_key("19BPIRr7V5WTz1pxfmskX9TfmxkcA8M934cu-VqvB5-8").worksheet("OrgDatabase")
+        sheet = client.open_by_key("1Pi1n9m8ZDz-esdtCPMgo0RRy2eVMol592tWOcK-i70M").worksheet("OrgDatabase")
         
         # Find the row with the matching client ID
         client_cell = sheet.find(client_id, in_column=2)  # Search in column B
@@ -119,8 +119,8 @@ def get_questions(sheet_id, team, phase):
         
         # Find the header row and get indices for relevant columns
         header_row = all_data[0]
-        team_index = header_row.index("Team")
-        phase_index = header_row.index("Phase")
+        team_index = header_row.index("Department")
+        phase_index = header_row.index("Terraform Stream")
         
         # Find question columns more flexibly
         question_indices = []
@@ -137,7 +137,7 @@ def get_questions(sheet_id, team, phase):
             if row[team_index] == team and row[phase_index] == phase:
                 return [row[i] for i in question_indices[:4]]  # Return only the first 4 questions
         
-        st.warning(f"No questions found for team '{team}' and phase '{phase}'")
+        st.warning(f"No questions found for Department '{team}' and Terraform Stream '{phase}'")
         return None
     except Exception as e:
         st.error(f"Error accessing Google Sheets: {str(e)}")
@@ -232,9 +232,9 @@ if org_sheet_id:
             if st.session_state.reset_form:
                 st.session_state.reset_form = False
         else:
-            st.warning("No questions found for the selected team and phase. Please try a different combination.")
+            st.warning("No questions found for the selected Department and Terraform Stream. Please try a different combination.")
     else:
-        st.info("Please select both a team and a phase to view the questions.")
+        st.info("Please select both a Department and a Terraform Stream to view the questions.")
 
 else:
     st.error("Invalid client ID or error accessing the database. Please check the URL and try again.")
