@@ -128,14 +128,14 @@ def get_questions(sheet_id, team, phase):
             if col.lower().startswith("question"):
                 question_indices.append(header_row.index(col))
         
-        if len(question_indices) < 4:
-            st.error(f"Not enough question columns found. Expected 4, found {len(question_indices)}")
+        if len(question_indices) < 5:
+            st.error(f"Not enough question columns found. Expected 5, found {len(question_indices)}")
             return None
         
         # Find the row with the matching team and phase
         for row in all_data[1:]:  # Skip header row
             if row[team_index] == team and row[phase_index] == phase:
-                return [row[i] for i in question_indices[:4]]  # Return only the first 4 questions
+                return [row[i] for i in question_indices[:5]]  # Return only the first 5 questions
         
         st.warning(f"No questions found for Department '{team}' and Terraform Stream '{phase}'")
         return None
@@ -216,7 +216,7 @@ if org_sheet_id:
                         return None
 
                 # Collect responses
-                responses = [selected_team, selected_phase] + [st.session_state.get(f"q{i}", "") for i in range(2, 6)]
+                responses = [selected_team, selected_phase] + [st.session_state.get(f"q{i}", "") for i in range(2, 7)]
 
                 # Post answers to the sheet
                 result = post_answers(org_sheet_id, responses)
