@@ -1,39 +1,49 @@
 Based on the project sentiment survey data, give me the data for a summary report. The questions that we asked are the following for the different teams:
 
 Team: Projects
-Q1: Are meeting structures (type, frequency) effective in supporting programme goals?
-Q2: What plans are in place for onboarding new team members and ramping up the programme?
-Q3: How effective is the reporting structure in keeping stakeholders informed and aligned?
-Q4: How are issues identified, tracked, and resolved within the programme?
+Q1: Please include your name and indicate if you were in a support or ownership role.
+Q2: What was the objective of the workstream?
+Q3: What were your outcomes and outputs? 
+Q4: What were your learnings?
+Q5: What do you think the next steps for the workstream should be?
+
 
 Team: Finance
-Q1:How is cost tracking and monitoring being conducted to ensure financial control?
-Q2:How is financial reporting conducted to ensure transparency and accountability?
-Q3:How are budget variances analyzed and managed to keep the programme on track?	
-Q4: What financial approval processes are in place for managing contractual deliverables and reserves?
+Q1: Please include your name and indicate if you were in a support or ownership role.
+Q2: What was the objective of the workstream?
+Q3: What were your outcomes and outputs? 
+Q4: What were your learnings?
+Q5: What do you think the next steps for the workstream should be?
+
+
 
 Team: Engineering
-Q1: Have you slotted in the design and build phases into your weekly sprints?
-Q2: Have you buffered in enough time to ensure that we will be able to make the deadlines?
-Q3: Are there any risks with other project deadlines that may impact this project?
-Q4: Have you been involved in the current cost estimates that have been shared with the stakeholders?
+Q1: Please include your name and indicate if you were in a support or ownership role.
+Q2: What was the objective of the workstream?
+Q3: What were your outcomes and outputs? 
+Q4: What were your learnings?
+Q5: What do you think the next steps for the workstream should be?
 
 
 Team: Support
-Q1: Do you know when training needs to take place?
-Q2: Has a handover session been planned with your team post design and build?
-Q3: Do you know when introductions are scheduled with the support team and the client teams?
-Q4: 
+Q1: Please include your name and indicate if you were in a support or ownership role.
+Q2: What was the objective of the workstream?
+Q3: What were your outcomes and outputs? 
+Q4: What were your learnings?
+Q5: What do you think the next steps for the workstream should be?
 
 
 Team: Test
-Q1: Do you know when testing kicks off?	Have you kicked off your testing plan?
-Q2: Has a handover session been planned with your team post design and build?
-Q3: Are there any areas that concern you that may be a risk?
-Q4: How excited are you about the project?
+Q1: Please include your name and indicate if you were in a support or ownership role.
+Q2: What was the objective of the workstream?
+Q3: What were your outcomes and outputs? 
+Q4: What were your learnings?
+Q5: What do you think the next steps for the workstream should be?
 
 
-The main aim of the report will be to identify macro trends and find recommendations based on the feedback given by the different teams. For each team a short summary should be given to identifying macro trends based on the data and recommendations to ensure that if anything is flagged as a concern, it should be addressed to make sure that the project keeps on track and early signs of failure is picked up. 
+
+
+The main aim of the report will be to identify macro trends and find recommendations based on the project feedback given by the different teams. For each team a short summary should be given to identifying macro trends based on the data and recommendations to ensure that if anything is flagged as a concern, it should be addressed to make sure that these items are considered for future projects.  Each team also suggests next steps for the specific workstream, include something about this as well in the summary.
 
 
 This is an example of the output in json that I want to get:
@@ -41,7 +51,7 @@ This is an example of the output in json that I want to get:
   {
     "Date": "2024-08-04",
     "Company Name": "TFG",
-    "Overview": "This report summarizes the feedback from the project sentiment survey, analyzing responses from different phases and teams. The main goal is to identify macro trends and provide recommendations to address concerns, ensuring the project remains on track and potential issues are addressed early.",
+    "Overview": "This report summarizes the feedback from the project sentiment survey, analyzing responses from different phases and teams. The main goal is to identify macro trends and provide recommendations to address concerns, ensuring that these issues are resolved and measures are put in place for future project success.",
     "Sentiment Summary Planning Team 1 Header": "Projects Team:",
     "Sentiment Summary Team 1 Text": "The current meeting structures are generally effective but may benefit from adjusted formats. Onboarding is well-structured, and reporting is robust. Issue tracking is in place with weekly reviews.",
     "Sentiment Recommendation Team 1 Text": "Consider refining meeting types to focus more on specific tasks and ensuring the reporting system remains concise and transparent.",
