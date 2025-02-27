@@ -67,6 +67,12 @@ This is an example of the output in json that I want to get:
     "Sentiment Summary Planning Team 5 Header": "Test Team:",
     "Sentiment Summary Team 5 Text": "Testing preparations are underway with a plan for bug tracking and retesting. Concerns about integration points and complexity are noted.",
     "Sentiment Recommendation Team 5 Text": "Focus on addressing integration risks and refine the testing plan to cover all potential complexities."
+"Sentiment Summary Planning Team 6 Header": "Test Team:",
+    "Sentiment Summary Team 6 Text": "Testing preparations are underway with a plan for bug tracking and retesting. Concerns about integration points and complexity are noted.",
+    "Sentiment Recommendation Team 6 Text": "Focus on addressing integration risks and refine the testing plan to cover all potential complexities."
+"Sentiment Summary Planning Team 7 Header": "Test Team:",
+    "Sentiment Summary Team 7 Text": "Testing preparations are underway with a plan for bug tracking and retesting. Concerns about integration points and complexity are noted.",
+    "Sentiment Recommendation Team 7 Text": "Focus on addressing integration risks and refine the testing plan to cover all potential complexities."
     "Sentiment Summary Planning Macro Trends Header": "Macro Trends:",
     "Sentiment Summary Planning Macro Trends Header 1": "Effectiveness:",
     "Sentiment Summary Planning Macro Trends Text 1": "Many responses highlighted the effectiveness of current practices, though improvements are suggested for specific areas such as meeting types and reporting clarity.:",
