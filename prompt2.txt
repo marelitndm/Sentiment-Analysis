@@ -43,7 +43,7 @@ Q5: What do you think the next steps for the workstream should be?
 
 
 
-The main aim of the report will be to identify macro trends and find recommendations based on the project feedback given by the different teams. For each team a summary should be given to identifying macro trends based on the data and recommendations to ensure that if anything is flagged as a concern, it should be addressed to make sure that these items are considered for future projects.  Each team also suggests next steps for the specific workstream, include something about this as well in the summary.
+The main aim of the report will be to identify macro trends and find recommendations based on the project feedback given by the different teams. For each team a summary with enough detail should be given to identifying macro trends based on the data and recommendations to ensure that if anything is flagged as a concern, it should be addressed to make sure that these items are considered for future projects.  Each team also suggests next steps for the specific workstream, include something about this as well in the summary.
 
 
 This is an example of the output in json that I want to get:
